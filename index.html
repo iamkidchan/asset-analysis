@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Analysis Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Asset Analysis</h1>
+    <form id="asset-form">
+        <div class="category">
+            <h3>Personal Information</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required>
+        </div>
+
+        <div class="category">
+            <h3>Bank Loan and Liabilities</h3>
+            <label for="mortgage">Mortgage Loan vs Actual Market Value:</label>
+            <input type="number" id="mortgage" name="mortgage" required>
+
+            <label for="housing">Housing Loan:</label>
+            <input type="number" id="housing" name="housing" required>
+
+            <label for="car">Car Loan:</label>
+            <input type="number" id="car" name="car" required>
+
+            <label for="credit-card">Credit Card:</label>
+            <input type="number" id="credit-card" name="credit-card" required>
+
+            <label for="other">Other Liabilities:</label>
+            <input type="number" id="other" name="other">
+        </div>
+
+        <div class="category">
+            <h3>Estate Administration Fee</h3>
+            <label for="total-asset">Value of Total Asset:</label>
+            <input type="number" id="total-asset" name="total-asset" required>
+        </div>
+
+        <div class="category">
+            <h3>Income Tax & Expenses</h3>
+            <label for="income-tax-expenses">Total Assets X 24%:</label>
+            <input type="number" id="income-tax-expenses" name="income-tax-expenses" required>
+
+            <label for="income-tax-paid">Income Tax Paid This Year:</label>
+            <input type="number" id="income-tax-paid" name="income-tax-paid" required>
+        </div>
+
+        <div class="category">
+            <h3>Living Maintenance</h3>
+            <label for="family-expenses">Family Expenses per Month:</label>
+            <input type="number" id="family-expenses" name="family-expenses" required>
+
+            <label for="years">Number of Years:</label>
+            <input type="number" id="years" name="years" required>
+        </div>
+
+        <div class="category">
+            <h3>Education Expenses</h3>
+            <label for="education-fund">Education Fund Amount per Child:</label>
+            <input type="number" id="education-fund" name="education-fund" required>
+
+            <label for="num-children">Number of Children:</label>
+            <input type="number" id="num-children" name="num-children" required>
+        </div>
+
+        <div class="category">
+            <h3>Parents Monthly Distribution</h3>
+            <label for="parent-fund">Parent Fund per Month:</label>
+            <input type="number" id="parent-fund" name="parent-fund" required>
+
+            <label for="parent-years">Number of Years:</label>
+            <input type="number" id="parent-years" name="parent-years" required>
+        </div>
+
+        <div class="category">
+            <h3>Funeral Expenses</h3>
+            <label for="funeral-expenses">Funeral Expenses:</label>
+            <input type="number" id="funeral-expenses" name="funeral-expenses" required>
+        </div>
+
+        <div class="category">
+            <h3>Existing Insurance Policies</h3>
+            <label for="total-sum-insured">Total Sum Insured:</label>
+            <input type="number" id="total-sum-insured" name="total-sum-insured" required>
+        </div>
+
+        <button type="button" onclick="calculateResults()">Calculate</button>
+    </form>
+
+    <div class="output" id="output"></div>
